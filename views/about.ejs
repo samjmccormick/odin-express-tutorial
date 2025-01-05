@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>About</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <div>About</div>
+    <div>Our <%= company %> is the best in the business.</div>
+  </body>
+  <%- include('footer', {company: company, year: year}) %>
+</html>

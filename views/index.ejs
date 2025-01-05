@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <!-- index.ejs -->
+    <ul>
+      <% users.forEach((user) => { %> <%- include('users/user', {user: user});
+      %> <% }); %>
+    </ul>
+  </body>
+  <%- include('footer', {company: company, year: year}) %>
+</html>
